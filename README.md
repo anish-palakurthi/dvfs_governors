@@ -13,7 +13,7 @@ For the steps, we will use `qlearning.c`, but any filename can be substituted.
 **Create a Makefile:**
 In the same directory as `qlearning.c`, create a file named `Makefile` with the following content:
 ```makefile
-obj-m += rl_governor.o
+obj-m += qlearning.o
 
 all:
     make -C /lib/modules/$(shell uname -r)/build M=$(PWD) modules
